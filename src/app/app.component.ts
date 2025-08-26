@@ -1,8 +1,10 @@
 import { Component, computed, signal } from '@angular/core'
+import { CurrencyPipe, DatePipe } from '@angular/common'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  imports: [DatePipe, CurrencyPipe],
   styleUrl: './app.component.scss'
 })
 export class AppComponent {

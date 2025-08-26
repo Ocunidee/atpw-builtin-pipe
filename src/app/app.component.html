@@ -1,5 +1,5 @@
-<strong>Membership only {{price()}} !!</strong>
-<p> Offer expires {{expirationDate()}}</p>
+<strong>Membership only {{price() | currency:'EUR':undefined:undefined:'fr'}} !!</strong>
+<p> Offer expires {{expirationDate() | date:'EEEE dd MMMM y':undefined:'fr'}}</p>
 
 <!-- Format the price (in EUR) and the date ('EEEE dd MMMM y'), both in French -->
 <!-- TIP: to have the right locale, make a stackoverflow search or go see the app.config.ts file -->
